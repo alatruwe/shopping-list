@@ -1,3 +1,4 @@
+// deep clone and keep a copy of a list element
 const listElement = $('li').first().clone([true]);
 
 $ (function() {
@@ -11,7 +12,7 @@ $ (function() {
         // find the entered text and store the value
         const newItem = $(this).find('#shopping-list-entry');
 
-        // deep clone the first element of the list and add it to the end of the list
+        // add a new list element to the end of the list
         listElement.clone().appendTo('ul');;
         
         // change item value for new item entered
